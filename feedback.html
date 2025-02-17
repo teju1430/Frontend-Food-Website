@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+           
+        .star
+        {
+            font-size:35px;
+            background-color: unset;
+            border: none;
+            color:orange;
+        }
+        .star:hover
+        {
+            cursor: pointer;
+        }
+        .box
+        {
+        
+               background-color:#fff ;
+               padding:60px;
+               border-radius: 8px;
+               box-shadow:0 0 20px rgba(0,0,0,0.3);
+               margin:130px;
+        }
+        h2
+        {
+            justify-content: center;
+            text-align: center;
+            margin:20px;
+        }
+        .container
+        {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        button{
+            background-color: purple;
+            color: white;
+            border-radius: 1px;
+            border: none;
+            padding: 8px;
+            margin: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div>
+    <h2>FEEDBACK</h2>
+    </div>
+      <div class="star-rating">
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+      </div>
+      <div class="container">
+        <a href="thankyou.html">
+      <button>submit</button>
+      </a>
+      </div>
+      </div>
+      </form>
+      <script>
+        const Allstars = document.querySelectorAll('.star');
+        Allstars.forEach((star,i) =>
+        {
+         star.onclick = function ()
+         {
+            let current_star = i + 1;
+            Allstars.forEach((star,j) =>
+             {
+                if(current_star >= j + 1){
+                    star.innerHTML = '&#9733';
+                }
+                else{
+                    star.innerHTML = '&#9734';
+                }
+            })
+
+         }
+
+        })
+
+        
+
+      </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+.container
+{
+    background-image: url('https://images.yourstory.com/cs/2/220356402d6d11e9aa979329348d4c3e/swiggypng-1586771832047.png?fm=png&auto=format&blur=500');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+*{
+    margin:0;
+    padding:0;
+}

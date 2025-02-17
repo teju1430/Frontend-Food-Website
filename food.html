@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var seconds=0;
+            function secondsdisplay()
+            {
+                seconds+=1;
+                document.getElementById("container").innerHTML=" ";
+            }
+            setInterval (secondsdisplay,1000);
+            function nextpage()
+            {
+                window.location="file:///C:/Users/bavir/OneDrive/Desktop/teju/swiggy/home.html";
+            }
+            setTimeout('nextpage()',2000);
+
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            website
+        </title>
+        <link rel="stylesheet" href="f.css"></link>
+    </head>
+    <body>
+         <div class="container"></div>
+    </body>
+</html>

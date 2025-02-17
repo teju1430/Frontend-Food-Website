@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+               font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                margin:0;
+                background-color:white;
+            }
+            form
+            {
+               background-color:#fff ;
+               padding:60px;
+               border-radius: 8px;
+               box-shadow:0 0 10px rgba(0,0,0,0.1);
+               margin:160px;
+            }
+            input,button
+            {
+                width:100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                box-sizing: border-box;
+                border:none;
+                border-bottom: 1px solid black;
+                outline: none;
+
+            }
+            button{
+                background-color:purple;
+                color:#fff;
+                cursor:pointer;
+                border: none;
+                font-size:18px;
+            }
+            .button:hover
+            {
+                background-color: rgb(16, 177, 231);
+            }
+    </style>
+</head>
+<body>
+    <form>
+        
+        <label for="name">userame:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button>submit</button>
+</body>
+</html>
